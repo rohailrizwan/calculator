@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap 40 - 55</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="calculator">My calculator</h1>
+
+    <div class="inputfield">
+        <input type="text" placeholder="0" class="input_num" id="field" >
+    </div>
+    <div class="btns" >
+        <button class="changecolor" onclick="input_num('+')" onkeypress="input_num('+')"  >+</button>
+        <button class="changecolor" onclick="input_num('-')" onkeypress="input_num('-')">-</button>
+        <button class="changecolor " onclick="input_num('*')" onkeypress="input_num('*')">*</button>
+        <button class="clear " onclick="clearAll()"  >C</button>
+        <br/>
+        <button class="changecolor " onclick="input_num(9)" onkeypress="input_num('9')">9</button>
+        <button class="changecolor " onclick="input_num(8)" onkeypress="input_num('8')">8</button>
+        <button class="changecolor " onclick="input_num(7)" onkeypress="input_num('7')">7</button>
+        <button class="dividechangecolor " onclick="input_num('/')" onkeypress="input_num('/')">/</button>
+        <br/>
+        <button class=" changecolor" onclick="input_num(6)" onkeypress="input_num('6')">6</button>
+        <button class="changecolor " onclick="input_num(5)" onkeypress="input_num('5')">5</button>
+        <button class="changecolor " onclick="input_num(4)" onkeypress="input_num('4')">4</button>
+        <button  class="remove changecolor" onclick="Remove()">X</button>
+        <br/>
+        <button class="changecolor" onclick="input_num(3)" onkeypress="input_num('3')">3</button>
+        <button class="changecolor " onclick="input_num(2)" onkeypress="input_num('2')">2</button>
+        <button class="changecolor " onclick="input_num(1)" onkeypress="input_num('1')">1</button>
+        <button class="zero changecolor" onclick="input_num(0)" onkeypress="input_num('0')">0</button>
+        <br>
+        <button class="equal changecolor" onclick="result()" >=</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
